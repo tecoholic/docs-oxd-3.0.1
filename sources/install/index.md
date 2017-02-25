@@ -89,7 +89,7 @@ available for download from [maven repository](http://ox.gluu.org/maven/org/xdi/
 
 1. Make a folder called `oxd-server` (or whatever you like)
  
-2. Unzip the [zip distribution](http://ox.gluu.org/maven/org/xdi/oxd-server/3.0.0/oxd-server-3.0.0-distribution.zip)
+2. Unzip the [zip distribution](http://ox.gluu.org/maven/org/xdi/oxd-server/3.0.1/oxd-server-3.0.1-distribution.zip)
 in the above folder you just created.
 
 3. Run `oxd-server/bin/oxd-start.bat`
@@ -98,9 +98,9 @@ in the above folder you just created.
 
 1. Make a folder called `oxd-server` (or whatever you like), and `cd` to this folder
  
-2. `$ wget http://ox.gluu.org/maven/org/xdi/oxd-server/3.0.0/oxd-server-3.0.0-distribution.zip`
+2. `$ wget http://ox.gluu.org/maven/org/xdi/oxd-server/3.0.1/oxd-server-3.0.1-distribution.zip`
 
-3. `$ unzip oxd-server-3.0.0-distribution.zip`
+3. `$ unzip oxd-server-3.0.1-distribution.zip`
 
 4. `$ nohup bin/oxd-start.sh &`
 
