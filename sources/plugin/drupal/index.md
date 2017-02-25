@@ -1,5 +1,3 @@
-[TOC]
-
 # Drupal OpenID Connect Single Sign-On (SSO) Module By Gluu
 
 ![image](https://raw.githubusercontent.com/GluuFederation/drupal-oxd-module/master/drupal.png)

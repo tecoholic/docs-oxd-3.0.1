@@ -4,11 +4,11 @@ site_favicon: 'favicon.ico'
 copyright: Copyright &copy; 2014, Gluu, Inc.
 docs_dir: sources 
 # repo_url: https://github.com/GluuFederation/docs-oxd
-repo_url: https://github.com/GluuFederation/docs-oxd-3.0
+repo_url: https://github.com/GluuFederation/docs-oxd-3.0.1
 #theme: readthedocs
 theme_dir: theme/material/
 extra:
-    version: '3.0.0'
+    version: '3.0.1'
     logo: 'gluu.jpg'
 markdown_extensions:
 - admonition

@@ -1,5 +1,3 @@
-[TOC]
-
 # OpenID Connect Single Sign-On (SSO) WordPress Plugin By Gluu
 
 ![image](https://raw.githubusercontent.com/GluuFederation/wordpress-oxd-plugin/master/wordpress.png)

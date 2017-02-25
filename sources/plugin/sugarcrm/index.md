@@ -1,5 +1,3 @@
-[TOC]
-
 # SugarCRM OpenID Connect Single Sign-On (SSO) Module By Gluu
 
 ![image](https://raw.githubusercontent.com/GluuFederation/sugarcrm-oxd-module/master/sugarcrm.png)

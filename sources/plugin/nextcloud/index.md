@@ -1,5 +1,3 @@
-[TOC]
-
 # OpenID Connect Single Sign-On (SSO) NextCloud APP by Gluu
 
 ![image](https://raw.githubusercontent.com/GluuFederation/nextcloud-oxd-plugin/master/nextcloud.png)

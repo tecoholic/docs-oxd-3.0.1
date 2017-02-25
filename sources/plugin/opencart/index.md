@@ -1,5 +1,3 @@
-[TOC]
-
 # OpenCart  OpenID Connect Single Sign-On (SSO) Extension by Gluu 
 
 ![image](https://raw.githubusercontent.com/GluuFederation/opencart-oxd-module/master/opencart.png)

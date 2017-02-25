@@ -1,5 +1,3 @@
-[TOC]
-
 # OpenID Connect Single Sign-On (SSO) Magento Extension By Gluu
 
 ![image](https://raw.githubusercontent.com/GluuFederation/magento-oxd-extension/master/magento.png)

@@ -1,4 +1,3 @@
-
 # OpenID Connect Single Sign-On (SSO) Shopify App By Gluu
 
 ![image](../img/plugin.png)

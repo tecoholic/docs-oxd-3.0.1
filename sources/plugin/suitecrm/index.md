@@ -1,5 +1,3 @@
-[TOC]
-
 # SuiteCRM OpenID Connect Single Sign-On (SSO) Module By Gluu
 
 ![image](https://raw.githubusercontent.com/GluuFederation/suitecrm-oxd-module/master/suitecrm.png)
