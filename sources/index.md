@@ -1,4 +1,4 @@
-All rights reserved -- Copyright 2015 Gluu Inc.
+All rights reserved -- Copyright 2017 Gluu Inc.
 
 # oxd
 Gluu offers commercial OAuth 2.0 client software called oxd to make securing and integrating applications with the Gluu Server easier. 

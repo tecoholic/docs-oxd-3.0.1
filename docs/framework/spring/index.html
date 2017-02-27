@@ -572,6 +572,61 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sample-code" title="Sample Code" class="md-nav__link">
+    Sample Code
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-register_site" title="1) register_site" class="md-nav__link">
+    1) register_site
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-update_site_registration" title="2) update_site_registration" class="md-nav__link">
+    2) update_site_registration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-get_authorization_url" title="3) get_authorization_url" class="md-nav__link">
+    3) get_authorization_url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-get_tokens_by_code" title="4) get_tokens_by_code" class="md-nav__link">
+    4) get_tokens_by_code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-get_user_info" title="5) get_user_info" class="md-nav__link">
+    5) get_user_info
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-get_logout_uri" title="6) get_logout_uri" class="md-nav__link">
+    6) get_logout_uri
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -680,6 +735,61 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sample-code" title="Sample Code" class="md-nav__link">
+    Sample Code
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-register_site" title="1) register_site" class="md-nav__link">
+    1) register_site
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-update_site_registration" title="2) update_site_registration" class="md-nav__link">
+    2) update_site_registration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-get_authorization_url" title="3) get_authorization_url" class="md-nav__link">
+    3) get_authorization_url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-get_tokens_by_code" title="4) get_tokens_by_code" class="md-nav__link">
+    4) get_tokens_by_code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-get_user_info" title="5) get_user_info" class="md-nav__link">
+    5) get_user_info
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-get_logout_uri" title="6) get_logout_uri" class="md-nav__link">
+    6) get_logout_uri
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -721,7 +831,119 @@ mvn clean package -Dmaven.test.skip=true
 </code></pre>
 
 <p>Make sure the server already installed on your machine, or you can follow 
-<a href="https://gluu.org/docs/2.4.4/installation-guide/install/">this</a> guide to install it.</p>
+<a href="https://gluu.org/docs/ce/latest/installation-guide/install/">this</a> guide to install it.</p>
+<h2 id="sample-code">Sample Code<a class="headerlink" href="#sample-code" title="Permanent link">#</a></h2>
+<p>Usage of Oxd-spring is very simple. First of all we need to create parameter object related to command we are going to perform and pass to related method.
+Check Sample code below we are creating commandParams object  related to commands and calling related method with created params.</p>
+<h3 id="1-register_site">1) register_site<a class="headerlink" href="#1-register_site" title="Permanent link">#</a></h3>
+<hr />
+<pre><code class="java">
+// create registerSiteParams
+try{
+        final RegisterSiteParams commandParams = new RegisterSiteParams();
+        commandParams.setOpHost(opHost);
+        commandParams.setAuthorizationRedirectUri(redirectUrl);
+        commandParams.setPostLogoutRedirectUri(postLogoutRedirectUrl);
+        commandParams.setClientLogoutUri(Lists.newArrayList(logoutUrl));
+        commandParams.setRedirectUris(Arrays.asList(redirectUrl));
+        commandParams.setAcrValues(new ArrayList&lt;&gt;());
+        commandParams.setScope(Lists.newArrayList(&quot;openid&quot;, &quot;profile&quot;));
+        commandParams.setGrantType(Lists.newArrayList(&quot;authorization_code&quot;));
+        commandParams.setResponseTypes(Lists.newArrayList(&quot;code&quot;));
+        final Command command = new Command(CommandType.REGISTER_SITE).setParamsObject(commandParams);
+        return client.send(command);                
+ }
+catch (Exception e) 
+{
+    e.printStackTrace();
+ }
+
+//oxd_ host - oxd-server host eg.localhost or 127.0.0.1 port - oxd-server listing port (default port is 8099)
+
+</code></pre>
+
+<h3 id="2-update_site_registration">2) update_site_registration<a class="headerlink" href="#2-update_site_registration" title="Permanent link">#</a></h3>
+<hr />
+<pre><code class="java">
+//create UpdateSiteParams
+ try {
+        final UpdateSiteParams commandParams = new UpdateSiteParams();
+        commandParams.setOxdId(oxdId);
+        commandParams.setAuthorizationRedirectUri(redirectUrl);
+        final Command command = new Command(CommandType.UPDATE_SITE).setParamsObject(commandParams);
+        return client.send(command);
+}
+catch (Exception e) {
+  e.printStackTrace();
+ }
+</code></pre>
+
+<h3 id="3-get_authorization_url">3) get_authorization_url<a class="headerlink" href="#3-get_authorization_url" title="Permanent link">#</a></h3>
+<hr />
+<pre><code class="java">
+try
+{
+        final GetAuthorizationUrlParams commandParams = new GetAuthorizationUrlParams();
+        commandParams.setOxdId(oxdId);
+        final Command command = new Command(CommandType.GET_AUTHORIZATION_URL).setParamsObject(commandParams);
+        return client.send(command);
+}
+catch (Exception e) {
+  e.printStackTrace();
+ }        
+</code></pre>
+
+<h3 id="4-get_tokens_by_code">4) get_tokens_by_code<a class="headerlink" href="#4-get_tokens_by_code" title="Permanent link">#</a></h3>
+<hr />
+<pre><code class="java">try
+{
+        final GetTokensByCodeParams commandParams = new GetTokensByCodeParams();
+        commandParams.setOxdId(oxdId);
+        commandParams.setCode(code);
+        commandParams.setState(state);
+        final Command command = new Command(CommandType.GET_TOKENS_BY_CODE).setParamsObject(commandParams);
+        return client.send(command);
+}
+ catch (Exception e) {
+   e.printStackTrace();
+  }
+</code></pre>
+
+<h3 id="5-get_user_info">5) get_user_info<a class="headerlink" href="#5-get_user_info" title="Permanent link">#</a></h3>
+<hr />
+<pre><code class="java">
+ try
+ {
+        GetUserInfoParams params = new GetUserInfoParams();
+        params.setOxdId(oxdId);
+        params.setAccessToken(accessToken);
+        final Command command = new Command(CommandType.GET_USER_INFO).setParamsObject(params);
+        return client.send(command);
+ }
+catch (Exception e) {
+  e.printStackTrace();
+ }            
+
+</code></pre>
+
+<h3 id="6-get_logout_uri">6) get_logout_uri<a class="headerlink" href="#6-get_logout_uri" title="Permanent link">#</a></h3>
+<hr />
+<pre><code class="java">//create GetLogoutUrlParams
+try{
+        GetLogoutUrlParams params = new GetLogoutUrlParams();
+        params.setOxdId(oxdId);
+        params.setIdTokenHint(idToken);
+        final Command command = new Command(CommandType.GET_LOGOUT_URI).setParamsObject(params);
+        return client.send(command);       
+}
+catch (Exception e) {
+  e.printStackTrace();
+ }        
+
+</code></pre>
+
+<hr />
+<p><strong>Note :- You can also refer "<a href="https://gluu.org/docs/oxd/latest/libraries/java/">OXD_JAVA</a>" for more details of java classes</strong></p>
               
             </article>
           </div>
@@ -771,7 +993,7 @@ mvn clean package -Dmaven.test.skip=true
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2014, Gluu, Inc.
+            Copyright &copy; 2017, Gluu, Inc.
           </div>
         
         powered by
