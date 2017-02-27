@@ -1,7 +1,6 @@
 # oxd
-Gluu offers commercial OAuth 2.0 client software called oxd to make securing and integrating applications with the Gluu Server easier. 
 
-If you're using the Gluu Server as an OpenID Connect Provider (OP), your application can use any client software that implements the open standards the Gluu Server supports. However, you may want to consider using oxd because:
+To make integrating applications with the Gluu Server (or any standard OpenID Connect Provider, like Google) fast, easy, and secure, Gluu offers commercial OAuth 2.0 client software called [oxd](http://oxd.gluu.org). Your application(s) can use any client software that implements the open standards the Gluu Server supports, however you may want to consider using oxd because:
 
 1. oxd is super-easy to use;      
 2. We keep updating oxd to address the latest OAuth 2.0 security knowledge;      
@@ -10,15 +9,15 @@ If you're using the Gluu Server as an OpenID Connect Provider (OP), your applica
 5. There are oxd libraries for Php, Python, Java, Node, Ruby, C#, .Net, Perl and Go. If your application is programmed in another language, oxd has a simple JSON/REST API;      
 6. There are oxd plugins for many popular applications like: Wordpress, Drupal, Magento, OpenCart, SugarCRM, SuiteCRM, Roundcube, Shopify, and Kong. More are being added too. Next on the list are: MatterMost, RocketChat, NextCloud, and Liferay.      
 
-Peruse these docs and the [oxd code on Github](https://github.com/GluuFederation/oxd) to learn more about the project. When you're ready to deploy, head over to the website to [get your oxd license](https://oxd.gluu.org). 
+To learn more about oxd review the docs and [code on Github](https://github.com/GluuFederation/oxd). When you're ready to deploy oxd, head over to the website to [get your oxd license](https://oxd.gluu.org). 
 
 ## Overview
 
-The oxd Server is designed to work as a standalone service demon. It's actually a web server, running in an embedded [Jetty](http://www.eclipse.org/jetty/) server. Just start it and stop it like you would any other unix service.
+The oxd Server is designed to work as a standalone service demon. oxd is a web server, running in an embedded [Jetty](http://www.eclipse.org/jetty/) server. Start it and stop it like you would any other unix service.
 
-By default, oxd is restricted to `localhost`, which means these APIs cannot be reached from another server on the network--only by services running the server locally. You deploy oxd on each server that has web applications.
+By default, oxd is restricted to `localhost`, which means these APIs cannot be reached from another server on the network--only by services running locally on the server. oxd should be deployed on each server that has web applications.
 
-oxd API's can be called by any application that can make REST calls. Gluu also provides several native libraries that wrap the
+oxd APIs can be called by any application that can make REST calls. Gluu also provides several native libraries that wrap the
 oxd APIs, currently available for Php, Java, Python, Node, Ruby C#, and .Net.
 
 ## Technical Architecture
