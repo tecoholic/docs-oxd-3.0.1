@@ -733,10 +733,8 @@
                
               
                 
-                <p>All rights reserved -- Copyright 2017 Gluu Inc.</p>
-<h1 id="oxd">oxd<a class="headerlink" href="#oxd" title="Permanent link">#</a></h1>
-<p>Gluu offers commercial OAuth 2.0 client software called oxd to make securing and integrating applications with the Gluu Server easier. </p>
-<p>If you're using the Gluu Server as an OpenID Connect Provider (OP), your application can use any client software that implements the open standards the Gluu Server supports. However, you may want to consider using oxd because:</p>
+                <h1 id="oxd">oxd<a class="headerlink" href="#oxd" title="Permanent link">#</a></h1>
+<p>To make integrating applications with the Gluu Server (or any standard OpenID Connect Provider, like Google) fast, easy, and secure, Gluu offers commercial OAuth 2.0 client software called <a href="http://oxd.gluu.org">oxd</a>. Your application(s) can use any client software that implements the open standards the Gluu Server supports, however you may want to consider using oxd because:</p>
 <ol>
 <li>oxd is super-easy to use;      </li>
 <li>We keep updating oxd to address the latest OAuth 2.0 security knowledge;      </li>
@@ -745,11 +743,11 @@
 <li>There are oxd libraries for Php, Python, Java, Node, Ruby, C#, .Net, Perl and Go. If your application is programmed in another language, oxd has a simple JSON/REST API;      </li>
 <li>There are oxd plugins for many popular applications like: Wordpress, Drupal, Magento, OpenCart, SugarCRM, SuiteCRM, Roundcube, Shopify, and Kong. More are being added too. Next on the list are: MatterMost, RocketChat, NextCloud, and Liferay.      </li>
 </ol>
-<p>Peruse these docs and the <a href="https://github.com/GluuFederation/oxd">oxd code on Github</a> to learn more about the project. When you're ready to deploy, head over to the website to <a href="https://oxd.gluu.org">get your oxd license</a>. </p>
+<p>To learn more about oxd review the docs and <a href="https://github.com/GluuFederation/oxd">code on Github</a>. When you're ready to deploy oxd, head over to the website to <a href="https://oxd.gluu.org">get your oxd license</a>. </p>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">#</a></h2>
-<p>The oxd Server is designed to work as a standalone service demon. It's actually a web server, running in an embedded <a href="http://www.eclipse.org/jetty/">Jetty</a> server. Just start it and stop it like you would any other unix service.</p>
-<p>By default, oxd is restricted to <code>localhost</code>, which means these APIs cannot be reached from another server on the network--only by services running the server locally. You deploy oxd on each server that has web applications.</p>
-<p>oxd API's can be called by any application that can make REST calls. Gluu also provides several native libraries that wrap the
+<p>The oxd Server is designed to work as a standalone service demon. oxd is a web server, running in an embedded <a href="http://www.eclipse.org/jetty/">Jetty</a> server. Start it and stop it like you would any other unix service.</p>
+<p>By default, oxd is restricted to <code>localhost</code>, which means these APIs cannot be reached from another server on the network--only by services running locally on the server. oxd should be deployed on each server that has web applications.</p>
+<p>oxd APIs can be called by any application that can make REST calls. Gluu also provides several native libraries that wrap the
 oxd APIs, currently available for Php, Java, Python, Node, Ruby C#, and .Net.</p>
 <h2 id="technical-architecture">Technical Architecture<a class="headerlink" href="#technical-architecture" title="Permanent link">#</a></h2>
 <p><img alt="oxd-technical-architecture" src="https://cloud.githubusercontent.com/assets/5271048/22804205/919112e8-eedd-11e6-85a7-60eab8f51585.png" /></p>
