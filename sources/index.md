@@ -1,4 +1,4 @@
-# oxd
+# oxd 3.0.1 Documentation
 
 To make integrating applications with the Gluu Server (or any standard OpenID Connect Provider, like Google) fast, easy, and secure, Gluu offers commercial OAuth 2.0 client software called [oxd](http://oxd.gluu.org). Your application(s) can use any client software that implements the open standards the Gluu Server supports, however you may want to consider using oxd because:
 
