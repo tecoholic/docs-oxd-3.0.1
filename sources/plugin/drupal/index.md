@@ -9,7 +9,7 @@ In order to use the Drupal module you will need to have a standard OP (like Goog
 
 * Compatibility : 7.x versions
 
-* [Gluu Server Installation Guide](https://gluu.org/docs/2.4.4/installation-guide/install/).
+* [Gluu Server Installation Guide](https://gluu.org/docs/ce/installation-guide/install/).
 
 * [oxd Server Installation Guide](https://oxd.gluu.org/docs/install/)
 
