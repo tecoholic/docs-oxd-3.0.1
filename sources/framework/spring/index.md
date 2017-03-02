@@ -1,6 +1,9 @@
 # oxd-spring
 The following documentation shows how to configure Java Spring apps to use oxd for authentication. 
 
+!!! Note
+    You can also refer to the [oxd java library](https://gluu.org/docs/oxd/latest/libraries/java/)" for more details on java classes.
+
 ## Requirements
 The oxd-spring requires the oxD Server. Please use the following link to install it
 
@@ -171,4 +174,3 @@ catch (Exception e) {
 ----
 
 
-**Note :- You can also refer "[OXD_JAVA](https://gluu.org/docs/oxd/latest/libraries/java/)" for more details of java classes**
