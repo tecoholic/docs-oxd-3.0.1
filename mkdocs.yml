@@ -32,7 +32,13 @@ pages:
     - 'Ruby': 'libraries/ruby/index.md'
     - 'CSharp': 'libraries/csharp/index.md'
     - 'Perl': 'libraries/perl/index.md'
-
+- Framework:
+    - 'Java Spring': 'framework/spring/index.md'
+    - 'Java Play Framework': 'framework/play/index.md'
+    - 'Ruby on Rails': 'framework/ruby/index.md'
+    - 'Python Flask': 'framework/python/index.md'
+    - 'Node/Express': 'framework/node/index.md'
+    - '.Net': 'framework/net/index.md'
 - Plugins:
     - 'Wordpress': 'plugin/wordpress/index.md'
     - 'Magento': 'plugin/magento/index.md'
@@ -43,13 +49,7 @@ pages:
     - 'RoundCube': 'plugin/roundcube/index.md'
     - 'Shopify': 'plugin/shopify/index.md'
     - 'NextCloud': 'plugin/nextcloud/index.md'
-- Framework:
-    - 'Java Spring': 'framework/spring/index.md'
-    - 'Java Play Framework': 'framework/play/index.md'
-    - 'Ruby on Rails': 'framework/ruby/index.md'
-    - 'Python Flask': 'framework/python/index.md'
-    - 'Node/Express': 'framework/node/index.md'
-    - '.Net': 'framework/net/index.md'
+
 
 # master docs
 # - [install/index.md, hidden, hidden]
