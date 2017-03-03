@@ -46,8 +46,8 @@ pages:
 - Framework:
     - 'Java Spring': 'framework/spring/index.md'
     - 'Java Play Framework': 'framework/play/index.md'
-    - 'Ruby on Rails': 'framework/ruby/index.md'
-    - 'Python Flask': 'framework/python/index.md'
+    - 'Ruby on Rails': 'framework/rails/index.md'
+    - 'Python Flask': 'framework/flask/index.md'
     - 'Node/Express': 'framework/node/index.md'
     - '.Net': 'framework/net/index.md'
 
