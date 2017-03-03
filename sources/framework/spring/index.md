@@ -1,8 +1,11 @@
 # oxd-spring
-The following documentation shows how to configure Java Spring apps to use oxd for authentication. 
+The following documentation demonstrates how to use Gluu's commercial OAuth 2.0 client software, [oxd](http://oxd.gluu.org), to send users from a Java Spring app to an OpenID Connect Provider (OP) for login. You can send users to any standard OP for login, including Google. In these docs we use the [free open source Gluu Server](http://gluu.org/gluu-server) as the OP.
+
+!!! Note
+    You can also refer to the [oxd java library](https://gluu.org/docs/oxd/libraries/java/) for more details on java classes.
 
 ## Requirements
-The oxd-spring requires the oxD Server. Please use the following link to install it
+The oxd-spring requires the oxd Server. Please use the following link to install it
 
 * [oxd Server Installation Guide](https://oxd.gluu.org/docs/install/)
 
@@ -10,7 +13,6 @@ The oxd-spring requires the oxD Server. Please use the following link to install
 ## Install oxd-spring
 Clone oxd-spring from Github repo and run maven command to install it:
 ```
-git clone https://github.com/GluuFederation/oxd-spring.git
 cd oxd-spring 
 mvn clean package -Dmaven.test.skip=true
 ```
@@ -36,7 +38,7 @@ Make sure the server already installed on your machine, or you can follow
 
 ## Sample Code
 
-Usage of Oxd-spring is very simple. First of all we need to create parameter object related to command we are going to perform and pass to related method.
+Usage of oxd-spring is very simple. First of all we need to create parameter object related to command we are going to perform and pass to related method.
 Check Sample code below we are creating commandParams object  related to commands and calling related method with created params.
 
 ### 1) register_site
@@ -171,4 +173,3 @@ catch (Exception e) {
 ----
 
 
-**Note :- You can also refer "[OXD_JAVA](https://gluu.org/docs/oxd/latest/libraries/java/)" for more details of java classes**
