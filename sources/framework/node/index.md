@@ -1,21 +1,16 @@
 # oxd-node-demo
 
-oxd-node-demo is demo application which communication protocol of oxD server. This can be used to access the OpenID connect & UMA Authorization end points of the Gluu Server via the oxD. This library provides the function calls required by a website to access user information from a OpenID Connect Provider by the OxD.
+The following documentation demonstrates how to use oxd to send users from a Node app to an OpenID Connect Provider (OP) for login. You can send users to any standard OP for login, including Google. In these docs we use the free open source Gluu Server as the OP.
 
 # Installation:
 
 * [Github sources](https://github.com/GluuFederation/oxd-node)
-* [Gluu Server](https://gluu.org/docs/2.4.4/installation-guide/install/)
-* [Oxd Server](https://oxd.gluu.org/docs/install/)
+* [Gluu Server](https://gluu.org/docs/ce/installation-guide/install/)
+* [Oxd Server](https://gluu.org/docs/oxd/install/)
 
 **Attention:**
 ```
 Application will not be working if your host does not have https://.
-```
-
-**Prerequisite**
-```
-You have to install gluu server and oxd-server in your hosting server to use oxd-node library with your oxd-node-demo application.
 ```
 
 # Configuration:
