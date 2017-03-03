@@ -1,5 +1,5 @@
 # oxd Python
-The following documentation demonstrates how to use Gluu's commercial OAuth 2.0 client software, [oxd](http://oxd.gluu.org), to send users from a Python app to an OpenID Connect Provider (OP) for login. You can send users to any standard OP for login, including Google and the [free open source Gluu Server](http://gluu.org/gluu-server).
+The following documentation demonstrates how to use Gluu's commercial OAuth 2.0 client software, [oxd](http://oxd.gluu.org), to send users from a Python app to an OpenID Connect Provider (OP) for login. You can securely send users to any standard OP for login, including Google and the [free open source Gluu Server](http://gluu.org/gluu-server).
 
 ## Installation
 
