@@ -1,10 +1,6 @@
-[TOC]
+# oxd Perl
 
-This page is created to document the `perl` library for oxD Server 2.4.4.
-
-#oxd-perl
-
-oxd-perl is a client library for the oxD Server 2.4.4. 
+The following documentation demonstrates how to use Gluu's commercial OAuth 2.0 client software, [oxd](http://oxd.gluu.org), to send users from a Perl app to an OpenID Connect Provider (OP) for login. You can securely send users to any standard OP for login, including Google and the [free open source Gluu Server](http://gluu.org/gluu-server).
 
 ## Installation
 
