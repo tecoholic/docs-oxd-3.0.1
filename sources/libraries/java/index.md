@@ -1,6 +1,6 @@
-# oxd-java
+# oxd Java
 
-oxd-java is a client library for the Gluu oxd server. For information about oxd, visit http://oxd.gluu.org
+The following documentation demonstrates how to use Gluu's commercial OAuth 2.0 client software, [oxd](http://oxd.gluu.org), to send users from a Java app to an OpenID Connect Provider (OP) for login. Using oxd you can securely send users to any standard OP for login, including Google and the [free open source Gluu Server](http://gluu.org/gluu-server).
 
 ## Installation
 
