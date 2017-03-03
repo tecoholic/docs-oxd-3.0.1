@@ -4,7 +4,7 @@ The following documentation demonstrates how to use Gluu's commercial OAuth 2.0 
 
 ## Installation
 * [Github sources](https://github.com/GluuFederation/oxd-csharp)
-* [Gluu Server](https://www.gluu.org/docs/deployment/ubuntu/)
+* [Gluu Server](https://gluu.org/docs/ce/3.0.1/installation-guide/install/)
 * [oxd server](https://oxd.gluu.org/docs/install/)
 * [Tests in Github](https://github.com/GluuFederation/oxd-csharp/tree/master/CSharp/Clients)
 * [CSharp API Documentation](https://github.com/GluuFederation/oxd-csharp)
