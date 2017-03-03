@@ -1,6 +1,6 @@
-# oxd Flask Demo site
+# oxd Flask
 
-The following documentation shows how to configure the Python Flask framework to use oxd for authentication. 
+The following documentation demonstrates how to use Gluu's commercial OAuth 2.0 client software, [oxd](http://oxd.gluu.org), to send users from a Python Flask app to an OpenID Connect Provider (OP) for login. You can send users to any standard OP for login, including Google. In these docs we use the [free open source Gluu Server](http://gluu.org/gluu-server) as the OP.
 
 ## Deployment
 
