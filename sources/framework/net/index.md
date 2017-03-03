@@ -1,6 +1,6 @@
-# oxd-net-demo
+# oxd .Net
 
-oxd-net-demo is demo application which communication protocol of oxD server. This can be used to access the OpenID connect & UMA Authorization end points of the Gluu Server via the oxD. This library provides the function calls required by a website to access user information from a OpenID Connect Provider by the OxD.
+The following documentation demonstrates how to use oxd to send users from a .Net app to an OpenID Connect Provider (OP) for login. You can send users to any standard OP for login, including Google. In these docs we use the free open source Gluu Server as the OP.
 
 !!! Note
     You can also refer to the [oxd csharp library](https://gluu.org/docs/oxd/libraries/csharp/) for more details on c# classes.
@@ -8,17 +8,12 @@ oxd-net-demo is demo application which communication protocol of oxD server. Thi
 ## Installation:
 
 * [Github sources](https://github.com/GluuFederation/oxd-csharp)
-* [Gluu Server](https://gluu.org/docs/2.4.4/installation-guide/install/)
-* [Oxd Server](https://oxd.gluu.org/docs/install/)
+* [Gluu Server](https://gluu.org/docs/ce/installation-guide/install/)
+* [oxd Server](https://gluu.org/docs/oxd/install/)
 
 **Attention:**
 ```
-Application will not be working if your host does not have https://.
-```
-
-**Prerequisite**
-```
-You have to install gluu server in Ubuntu 14 VM and oxd-server in your hosting server to use oxd-csharp library with your application.
+Application will not work if your host does not have https://.
 ```
 
 ## Configuration:
