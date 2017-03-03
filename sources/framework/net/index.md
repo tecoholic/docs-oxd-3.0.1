@@ -5,7 +5,7 @@ oxd-net-demo is demo application which communication protocol of oxD server. Thi
 !!! Note
     You can also refer to the [oxd csharp library](https://gluu.org/docs/oxd/libraries/csharp/) for more details on c# classes.
 
-# Installation:
+## Installation:
 
 * [Github sources](https://github.com/GluuFederation/oxd-csharp)
 * [Gluu Server](https://gluu.org/docs/2.4.4/installation-guide/install/)
@@ -21,11 +21,11 @@ Application will not be working if your host does not have https://.
 You have to install gluu server in Ubuntu 14 VM and oxd-server in your hosting server to use oxd-csharp library with your application.
 ```
 
-# Configuration:
+## Configuration:
 
 First set the GluuDemoWebsite as startup project and run.
 
-# How to use:
+### How to use:
 
 1. Download source code for demo client application [oxd-csharp](https://github.com/GluuFederation/oxd-csharp)
 2. First set the GluuDemoWebsite as startup project
@@ -33,7 +33,7 @@ First set the GluuDemoWebsite as startup project and run.
 
 ## Sample Code
 
-#### Register Site
+### Register Site
 **Required parameters:**
 * op_host
 * port        - the port of the oxd server
@@ -80,7 +80,7 @@ public RegisterSiteResponse RegisterSite(string host, int port, string redirectU
 }
 ```
 
-#### Update Site Registration
+### Update Site Registration
 **Required parameters:**
 * op_host
 * port
@@ -130,7 +130,7 @@ public RegisterSiteResponse RegisterSite(string host, int port, string redirectU
 }
 ```
 
-#### Get Authorization URL
+### Get Authorization URL
 **Required parameters:**
 * op_host
 * port
@@ -176,7 +176,7 @@ public RegisterSiteResponse RegisterSite(string host, int port, string redirectU
 }
 ```
 
-#### Get Tokens by Code
+### Get Tokens by Code
 **Required parameters:**
 * op_host
 * port
@@ -262,7 +262,7 @@ public static string GetAuthorizationCode(string host, int port, string userId, 
 }
 ```
 
-#### Get User Info
+### Get User Info
 **Required parameters:**
 * op_host
 * port
@@ -315,7 +315,7 @@ public static string GetAuthorizationCode(string host, int port, string userId, 
 }
 ```
 
-#### Logout
+### Logout
 **Required parameters:**
 * op_host
 * port
@@ -360,7 +360,7 @@ public static string GetAuthorizationCode(string host, int port, string userId, 
 }
 ```
 
-#### UMA RS Resource protection
+### UMA RS Resource protection
 **Request:**
 ```
    private UmaRsProtectResponse ProtectResources(OxdModel oxdModel)
@@ -399,7 +399,7 @@ public static string GetAuthorizationCode(string host, int port, string userId, 
    }
 ```
 
-#### UMA RS Check access
+### UMA RS Check access
 **Request:**
 ```
 	private UmaRsCheckAccessResponse CheckAccess(string rpt, string path, string httpMethod, OxdModel oxdModel)
@@ -427,7 +427,7 @@ Access Denied with valid Ticket
 ```
  
 
-#### UMA Get RPT
+### UMA Get RPT
 **Request:**
 ```
   private GetRPTResponse ObtainRpt(OxdModel oxdModel)
@@ -507,7 +507,7 @@ Access Granted
 ```
 
 
-#### UMA Get GAT
+### UMA Get GAT
 **Request:**
 ```
 public ActionResult GetGat(OxdModel oxd)
